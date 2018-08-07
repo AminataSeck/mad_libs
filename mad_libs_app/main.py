@@ -77,11 +77,8 @@ app = webapp2.WSGIApplication([
     ('/bed', BedPage), 
     ('/be', BePage), 
     ('/result', ResultPage), 
-    
-<<<<<<< HEAD
+
     
     
 ], debug=True)
-=======
-], debug=True)
->>>>>>> 0a7d435302189e9ddd7772be9c71d38f5acb4813
+
