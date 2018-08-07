@@ -66,8 +66,6 @@ class ResultPage(webapp2.RequestHandler):
             self.redirect("/")
    
 
-   
-
 
 
 app = webapp2.WSGIApplication([
@@ -79,7 +77,5 @@ app = webapp2.WSGIApplication([
     ('/bed', BedPage), 
     ('/be', BePage), 
     ('/result', ResultPage), 
-    
-    
     
 ], debug=True)
