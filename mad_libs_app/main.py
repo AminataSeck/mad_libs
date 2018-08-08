@@ -89,6 +89,9 @@ app = webapp2.WSGIApplication([
     ('/ani', AniPage), 
     ('/bed', BedPage), 
     ('/be', BePage), 
+
+    ('/result', ResultPage), 
+<<<<<<< HEAD
 <<<<<<< HEAD
     ('/result', ResultPage)
 
@@ -98,7 +101,11 @@ app = webapp2.WSGIApplication([
 <<<<<<< HEAD
     ('/result', ResultPage)
 =======
-    ('/result', ResultPage), 
+
+    
+    
+>>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
+=======
 <<<<<<< HEAD
     ('/becreative',BeCreativeHandler),
 =======
@@ -118,3 +125,7 @@ app = webapp2.WSGIApplication([
 >>>>>>> efb73354ceac9aa5b1c008446bf7a5e4855d2448
     
 ], debug=True)
+<<<<<<< HEAD
+=======
+
+>>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
