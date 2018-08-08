@@ -64,8 +64,7 @@ class ResultPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         self.response.write(about_template.render())
 
-         
-
+        
     def post(self):
         flag = True
         if (flag):
@@ -90,63 +89,9 @@ app = webapp2.WSGIApplication([
     ('/ani', AniPage), 
     ('/bed', BedPage), 
     ('/be', BePage), 
-<<<<<<< HEAD
     ('/result', ResultPage), 
     #('/becreative',BeCreativeHandler),
     
-=======
-<<<<<<< HEAD
-    ('/result', ResultPage)
-
-    ('/result', ResultPage), 
-=======
-    ('/result', ResultPage), 
-<<<<<<< HEAD
-    ('/becreative',BeCreativeHandler)
     
     
 ], debug=True)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ('/result', ResultPage)
-
-    
-    
-=======
-<<<<<<< HEAD
-    ('/result', ResultPage)
-=======
-
-    
-    
->>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
-=======
-<<<<<<< HEAD
->>>>>>> 8a2386cc480bd6fdfc96277763b28c614a2bc9a7
-    ('/becreative',BeCreativeHandler),
-
->>>>>>> d25fc8e9fe8b06729b65c37aaaa76ac96371407a
-    
-<<<<<<< HEAD
-    
-<<<<<<< HEAD
-], debug=True)
-=======
-    
-], debug=True)
-=======
-=======
->>>>>>> fcb3b85a774337ae68ac0b261c70de458756840c
->>>>>>> 040d7f192bb59aa5e98bf68ce216fbd13298b37d
->>>>>>> b50c8588e64301a2f5a0848df90a85c2156fef79
->>>>>>> efb73354ceac9aa5b1c008446bf7a5e4855d2448
-    
-], debug=True)
-<<<<<<< HEAD
-=======
-
->>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
->>>>>>> 0a942b01849495263d15d0c42deaa7da41985628
->>>>>>> 8a2386cc480bd6fdfc96277763b28c614a2bc9a7
->>>>>>> d25fc8e9fe8b06729b65c37aaaa76ac96371407a
