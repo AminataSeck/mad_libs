@@ -2,7 +2,7 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
-#from models import MadLib
+from models import MadLib
 
 #libraries for APIs
 from google.appengine.api import urlfetch
@@ -13,7 +13,8 @@ the_jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
-    
+
+
 #def run_query(user_story,spaces):
     #mad_lib = MadLib(story=user_story, num_spaces=spaces)
     
@@ -91,7 +92,4 @@ app = webapp2.WSGIApplication([
     ('/be', BePage), 
     ('/result', ResultPage), 
     #('/becreative',BeCreativeHandler),
-    
-    
-    
 ], debug=True)
