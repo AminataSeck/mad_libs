@@ -2,7 +2,7 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
-
+from models import MadLib
 
 #libraries for APIs
 from google.appengine.api import urlfetch
@@ -14,7 +14,14 @@ the_jinja_env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
     
-    
+def run_query(user_story,spaces):
+    mad_lib = MadLib(story=user_story, num_spaces=spaces)
+    key = mad_lib.put
+    print("!!!!!!!!!!!!!!!!!!!!")
+    print(key)
+
+
+
 class HomePage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/Home_Page.html')
@@ -55,7 +62,7 @@ class ResultPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         self.response.write(about_template.render())
-         
+
          
 
     def post(self):
@@ -64,6 +71,12 @@ class ResultPage(webapp2.RequestHandler):
             self.response.write(self.request.get('first_input'))
         else: 
             self.redirect("/")
+            
+class BeCreativeHandler(webapp2.RequestHandler):
+    def post(self): 
+       #TODO: to get user impot from becreatice.html
+        run_query("this is a (adjecive) story",1)
+
    
 
 
@@ -77,6 +90,7 @@ app = webapp2.WSGIApplication([
     ('/bed', BedPage), 
     ('/be', BePage), 
     ('/result', ResultPage), 
+    ('/becreative',BeCreativeHandler),
     
 ], debug=True)
 
