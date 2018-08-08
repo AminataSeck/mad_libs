@@ -1,8 +1,8 @@
-from google.appengine.ext import ndb
+#from google.appengine.ext import ndb
 
-class MadLib(ndb.Model):
-    story = ndb.StringProperty(required=True)
-    num_spaces = ndb.IntergerProperty(required=True)
+#class MadLib(ndb.Model):
+    #story = ndb.StringProperty(required=True)
+    #num_spaces = ndb.IntergerProperty(required=True)
     
     
     

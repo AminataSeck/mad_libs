@@ -2,7 +2,7 @@ import webapp2
 from random import shuffle
 import jinja2
 import os
-from models import MadLib
+#from models import MadLib
 
 #libraries for APIs
 from google.appengine.api import urlfetch
@@ -14,11 +14,12 @@ the_jinja_env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
     
-def run_query(user_story,spaces):
-    mad_lib = MadLib(story=user_story, num_spaces=spaces)
-    key = mad_lib.put
-    print("!!!!!!!!!!!!!!!!!!!!")
-    print(key)
+#def run_query(user_story,spaces):
+    #mad_lib = MadLib(story=user_story, num_spaces=spaces)
+    
+    #key = mad_lib.put
+    #print("!!!!!!!!!!!!!!!!!!!!")
+    #print(key)
 
 
 
@@ -72,10 +73,10 @@ class ResultPage(webapp2.RequestHandler):
         else: 
             self.redirect("/")
             
-class BeCreativeHandler(webapp2.RequestHandler):
-    def post(self): 
+#class BeCreativeHandler(webapp2.RequestHandler):
+    #def post(self): 
        #TODO: to get user impot from becreatice.html
-        run_query("this is a (adjecive) story",1)
+        #run_query("this is a (adjecive) story",1)
 
    
 
@@ -89,43 +90,9 @@ app = webapp2.WSGIApplication([
     ('/ani', AniPage), 
     ('/bed', BedPage), 
     ('/be', BePage), 
-
     ('/result', ResultPage), 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ('/result', ResultPage)
-
-    
-    
-=======
-<<<<<<< HEAD
-    ('/result', ResultPage)
-=======
-
-    
-    
->>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
-=======
-<<<<<<< HEAD
-    ('/becreative',BeCreativeHandler),
-=======
-<<<<<<< HEAD
+    #('/becreative',BeCreativeHandler),
     
     
     
 ], debug=True)
-=======
-<<<<<<< HEAD
-
-    
-=======
->>>>>>> fcb3b85a774337ae68ac0b261c70de458756840c
->>>>>>> 040d7f192bb59aa5e98bf68ce216fbd13298b37d
->>>>>>> b50c8588e64301a2f5a0848df90a85c2156fef79
->>>>>>> efb73354ceac9aa5b1c008446bf7a5e4855d2448
-    
-], debug=True)
-<<<<<<< HEAD
-=======
-
->>>>>>> c534b8d589b88a877ec9912a9ed1dc7d1f72cb61
