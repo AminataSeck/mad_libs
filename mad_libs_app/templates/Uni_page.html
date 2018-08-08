@@ -49,6 +49,17 @@ h1 {
 </table>
   <input type="submit" value="Submit">
 </form>
+
+   <form method=POST action="/uni">
+        {% for xyz in chosen_madlib%}
+            {% if (answer_dict['is_correct']) %}
+                <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
+            {% else %}
+                <input type="radio" name="selected-answer" value="wrong"> {{ answer_dict['text'] }} </input> <br>
+            {% endif %}
+        {% endfor %}
+        <input type="submit">
+
      
 
 </body>

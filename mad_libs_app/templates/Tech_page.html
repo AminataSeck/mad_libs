@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<center><title> uTsAB(B) Technology</title>
+<center><title> uTsAB(B) Technology </title>
 </head>
 <body>
-          <style>
+      <style>
 body {
     background-color: grey;
 }
@@ -13,19 +13,14 @@ h1 {
     margin-left: 40px;
 } 
 </style>
-    
   
-<h1>uTsAB(B) Technology</h1>
+<h1> uTsAB(B) </h1>  <h1> Technology</h1> 
 <p>This is a template 
-<<<<<<< HEAD
-<br>
     This is a template 
-=======
-    This is a template
->>>>>>> fa1ca2ffff15a80981ba26c76594b93b0f96122b
+    This is a template 
     This is a template
     This is a template 
-    This is a template 
+
 
 </center>
 </p>
@@ -36,12 +31,35 @@ h1 {
     <th>Input</th> 
   </tr>
   <tr>
-    <td>noun</td>
+    <td>Noun</td>
     <td><input type="text" name="first_input"><br></td> 
+  </tr>
+  <tr>
+    <td>Verb</td>
+    <td><input type="text" name="second_input"><br></td> </td>
+  </tr>
+  <tr>
+    <td>Adjective</td>
+    <td><input type="text" name="third_input"><br></td> </td>
+  </tr>
+  <tr>
+    <td>More Nouns </td>
+    <td><input type="text" name="third_input"><br></td> </td>
   </tr>
 </table>
   <input type="submit" value="Submit">
 </form>
+
+   <form method=POST action="/uni">
+        {% for xyz in chosen_madlib%}
+            {% if (answer_dict['is_correct'])\ %}
+                <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
+            {% else %}
+                <input type="radio" name="selected-answer" value="wrong"> {{ answer_dict['text'] }} </input> <br>
+            {% endif %}
+        {% endfor %}
+        <input type="submit">
+
      
 
 </body>
