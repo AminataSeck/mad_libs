@@ -14,11 +14,24 @@ the_jinja_env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
     
+<<<<<<<<< saved version
+#def run_query(user_story,spaces):
+    #mad_lib = MadLib(story=user_story, num_spaces=spaces)
+    
+    #key = mad_lib.put
+    #print("!!!!!!!!!!!!!!!!!!!!")
+    #print(key)
+=========
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
+    
 def run_query(user_story,spaces):
     mad_lib = MadLib(story=user_story, num_spaces=spaces)
     key = mad_lib.put
     print("!!!!!!!!!!!!!!!!!!!!")
     print(key)
+>>>>>>>>> local version
 
 
 
@@ -72,10 +85,10 @@ class ResultPage(webapp2.RequestHandler):
         else: 
             self.redirect("/")
             
-class BeCreativeHandler(webapp2.RequestHandler):
-    def post(self): 
+#class BeCreativeHandler(webapp2.RequestHandler):
+    #def post(self): 
        #TODO: to get user impot from becreatice.html
-        run_query("this is a (adjecive) story",1)
+        #run_query("this is a (adjecive) story",1)
 
    
 
@@ -89,10 +102,7 @@ app = webapp2.WSGIApplication([
     ('/ani', AniPage), 
     ('/bed', BedPage), 
     ('/be', BePage),
+    #('/becreative',BeCreativeHandler),
     ('/result', ResultPage), 
     ('/becreative',BeCreativeHandler)
-
-    
-    
-    
 ], debug=True)
