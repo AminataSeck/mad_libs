@@ -36,13 +36,15 @@ class UniPage(webapp2.RequestHandler):
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         the_variable_dict = {
             
             "noun_key": noun, 
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "tech"
+            "adv_key":adverb,
+            "category_key": "uni"
             
         } 
         
@@ -77,12 +79,14 @@ class TechPage(webapp2.RequestHandler):
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         the_variable_dict = {
             
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
+            "adv_key":adverb,
             "category_key": "tech"
             
         } 
@@ -92,13 +96,65 @@ class TechPage(webapp2.RequestHandler):
         
         mad_lib_inputs =[
             {
-                "part_of_speech": "noun",
-                
+                "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
             },
             {
                  "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
             }
-            
         ]    
 
         the_variable_dict = {
@@ -118,13 +174,15 @@ class SportsPage(webapp2.RequestHandler):
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         the_variable_dict = {
             
             "noun_key": noun, 
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "tech"
+            "adv_key":adverb,
+            "category_key": "sports"
             
         } 
         
@@ -158,29 +216,66 @@ class AniPage(webapp2.RequestHandler):
         noun = self.request.get("noun")
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
+        color = self.request.get("col")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         the_variable_dict = {
-            
+              
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "tech"
+            "adv_key":adverb,
+            "category_key": "ani"
             
+            
+            
+
         } 
         
         self.response.write(about_template.render(the_variable_dict))
     def get(self):
         
         mad_lib_inputs =[
+           {
+                "part_of_speech": "number",
+            },
             {
-                "part_of_speech": "noun",
-                
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
             },
             {
                  "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "color",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
             }
-            
         ]    
 
         the_variable_dict = {
@@ -199,6 +294,7 @@ class BedPage(webapp2.RequestHandler):
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         
         the_variable_dict = {
             
@@ -206,7 +302,7 @@ class BedPage(webapp2.RequestHandler):
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "tech"
+            "category_key": "bed"
             
         } 
         
@@ -216,12 +312,67 @@ class BedPage(webapp2.RequestHandler):
         mad_lib_inputs =[
             {
                 "part_of_speech": "noun",
-                
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
             },
             {
                  "part_of_speech": "verb",
             }
-            
         ]    
 
         the_variable_dict = {
@@ -240,13 +391,15 @@ class BePage(webapp2.RequestHandler):
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
+        adverb = self.request.get("adv")
         the_variable_dict = {
             
             "noun_key": noun, 
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "tech"
+            "adv_key":adverb,
+            "category_key": "be"
             
         } 
         
@@ -255,11 +408,40 @@ class BePage(webapp2.RequestHandler):
         
         mad_lib_inputs =[
             {
-                "part_of_speech": "noun",
-                
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
             },
             {
                  "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
             }
             
         ]    
@@ -294,5 +476,4 @@ app = webapp2.WSGIApplication([
     ('/bed', BedPage), 
     ('/be', BePage), 
     ('/result', ResultPage), 
-    #('/becreative',BeCreativeHandler),
 ], debug=True)

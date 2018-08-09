@@ -18,16 +18,12 @@ h4 {
     right:45%;
 }
 </style>
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 175c3ee01304277c47f5f91fd2a8478ecb7e7fae
 <h1> uTsAB(B) Best Friends</h1>
 
-<form method=POST action="/ani">
+<form method=POST action="/be">
         {% for xyz in chosen_madlib %}
-          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
+          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input>  <br> <br>
             
         {% endfor %}
          <input type="submit" value="Submit">
@@ -36,10 +32,24 @@ h4 {
 
 </body>
 
-<footer>
-  <center>
-  <h4>Powered by Grit </h4>
-  </center>
-</footer>
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+</style>
+<br>
+<br>
+<br>
+<div class="footer">
+  <p>Powered by GRIT</p>
+</div>
 
+
+</html>
 </html>
