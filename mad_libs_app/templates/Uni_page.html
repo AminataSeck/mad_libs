@@ -4,16 +4,20 @@
 <center><title> uTsAB(B) University</title>
 </head>
 <body>
-      <style>
+<style>
 body {
     background-color: grey;
 }
 h1 {
     color: yellow;
     margin-left: 40px;
-} 
+}
+h4 {
+    position:absolute;
+    bottom:0%;
+    right:45%;
+}
 </style>
-  
 <h1> uTsAB(B) </h1>  <h1> University</h1> 
 
     <form method=POST action="/tech">
@@ -21,13 +25,16 @@ h1 {
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
             
         {% endfor %}
+<<<<<<< HEAD
          <input type="submit" value="Submit">
     </form>
+=======
+     
+>>>>>>> 464aa09d3265478265ce9db38e6c17b310d2dd99
 </body>
-
 <footer>
   <center>
-  <p>Powered by Grit </p>
+  <h4>Powered by Grit </h4>
   </center>
 </footer>
 
