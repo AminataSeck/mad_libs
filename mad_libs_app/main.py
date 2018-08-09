@@ -34,10 +34,14 @@ class UniPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
         the_variable_dict = {
             
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
@@ -71,10 +75,14 @@ class TechPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
         the_variable_dict = {
             
             "noun_key": noun, 
             "verb_key": verb, 
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
@@ -108,10 +116,14 @@ class SportsPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
         the_variable_dict = {
             
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
@@ -145,10 +157,14 @@ class AniPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
         the_variable_dict = {
             
             "noun_key": noun, 
             "verb_key": verb, 
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
@@ -181,10 +197,13 @@ class BedPage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
         the_variable_dict = {
             
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
@@ -217,10 +236,14 @@ class BePage(webapp2.RequestHandler):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
         verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
         the_variable_dict = {
             
             "noun_key": noun, 
-            "verb_key": verb, 
+            "verb_key": verb,
+            "adj_key": adjective,
+            "num_key": number,
             "category_key": "tech"
             
         } 
