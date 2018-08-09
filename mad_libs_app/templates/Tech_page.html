@@ -20,52 +20,44 @@ h4 {
 </style>
   
 <h1> uTsAB(B) </h1>  <h1> Technology</h1> 
-<<<<<<< HEAD
-=======
-<p>This is a template 
-<br>
-    This is a template 
-    This is a template
-
-    This is a template 
-
-    This is a template 
-    This is a template
-    This is a template 
->>>>>>> 464aa09d3265478265ce9db38e6c17b310d2dd99
-
-
-
 
 
 
     <form method=POST action="/tech">
         {% for xyz in chosen_madlib %}
-          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
+          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br> <br>
+            
             
         {% endfor %}
          <input type="submit" value="Submit">
-<<<<<<< HEAD
-    </form>
-=======
+         
+         
         
-      method = POST action="/showmeme">
-      Line 1 of Meme:<br>
-      <input type="text" name="user-first-ln" value="First Line of Meme">
-      <br>
-      Line 2 of Meme:<br>
-      <input type="text" name="user-second-ln" value="Second Line of Meme">
-  </form>
+    </form>
 
-     
-
->>>>>>> 464aa09d3265478265ce9db38e6c17b310d2dd99
 </body>
 
-<footer>
-  <center>
-  <h4>Powered by Grit </h4>
-  </center>
-</footer>
+
+
+
+
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+</style>
+<br>
+<br>
+<br>
+<div class="footer">
+  <p>Powered by GRIT</p>
+</div>
+
 
 </html>
