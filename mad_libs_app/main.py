@@ -397,7 +397,6 @@ class BePage(webapp2.RequestHandler):
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "adv_key":adverb,
             "category_key": "be"
             
         } 
