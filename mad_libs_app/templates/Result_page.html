@@ -16,15 +16,31 @@ h1 {
 
 <h1>uTsAB(B) Results</h1>
 <p>
-    This is a template 
-    This is a template 
-    This is a template 
-    This is a template 
-    This is a template 
-    This is a template 
+    
+    {% if category_key == "uni": %}
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {%elif category_key == "tech": %} 
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {%elif category_key == "sports": %}
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {%elif category_key == "ani": %}
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {%elif category_key == "bed": %}
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {%elif category_key == "be": %}
+        My {{noun_key}} is wonderful. <br> 
+        I like to {{verb_key}} on cold days. 
+    {% endif %}
+    
+
+</p>
 
 </center>
-</p>
 </body>
 
 <footer>

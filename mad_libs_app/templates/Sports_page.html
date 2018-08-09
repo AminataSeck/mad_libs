@@ -15,27 +15,14 @@ h1 {
 </style>
   
 <h1>uTsAB(B) Sports</h1>
-<p>This is a template 
-    This is a template 
-    This is a template 
-    This is a template
-    This is a template 
-
-</center>
-</p>
-<form action="/resultg">
-<table>
-  <tr>
-    <th>Examples</th>
-    <th>Input</th> 
-  </tr>
-  <tr>
-    <td>noun</td>
-    <td><input type="text" name="first_input"><br></td> 
-  </tr>
-</table>
-  <input type="submit" value="Submit">
-</form>
+  <form method=POST action="/tech">
+        {% for xyz in chosen_madlib %}
+          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
+            
+        {% endfor %}
+         <input type="submit" value="Submit">
+  </form>
+    
      
 
 </body>

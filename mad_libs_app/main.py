@@ -30,11 +30,56 @@ class HomePage(webapp2.RequestHandler):
         self.response.write(about_template.render())
    
 class UniPage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Uni_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
+        
         
 class TechPage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
         
         mad_lib_inputs =[
@@ -59,47 +104,159 @@ class TechPage(webapp2.RequestHandler):
         
         
 class SportsPage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Sports_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
+        
 
 class AniPage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Ani_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
         
 class BedPage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Bed_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
         
 class BePage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb, 
+            "category_key": "tech"
+            
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Be_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
+        
     
         
 class ResultPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
+       
         self.response.write(about_template.render())
         
         
-
-        
-    def post(self):
-        flag = True
-        if (flag):
-            self.response.write(self.request.get('first_input'))
-        else: 
-            self.redirect("/")
-            
-#class BeCreativeHandler(webapp2.RequestHandler):
-    #def post(self): 
-       #TODO: to get user impot from becreatice.html
-        #run_query("this is a (adjecive) story",1)
-
-   
 
 
 
