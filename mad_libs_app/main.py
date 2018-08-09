@@ -400,7 +400,6 @@ class BePage(webapp2.RequestHandler):
             "num_key": number,
             "adv_key":adverb,
             "category_key": "be"
-            
         } 
         
         self.response.write(about_template.render(the_variable_dict))
