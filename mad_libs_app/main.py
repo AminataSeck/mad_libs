@@ -198,6 +198,8 @@ class BedPage(webapp2.RequestHandler):
         noun = self.request.get("noun")
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
+        number = self.request.get("num")
+        
         the_variable_dict = {
             
             "noun_key": noun, 
