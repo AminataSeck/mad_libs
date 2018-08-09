@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<center><title> uTsAB(B) Technology</title>
+<center><title> uTsAB(B) Technology </title>
 </head>
 <body>
-          <style>
+      <style>
 body {
     background-color: grey;
 }
 h1 {
     color: yellow;
     margin-left: 40px;
-} 
+}
+h4 {
+    position:absolute;
+    bottom:0%;
+    right:45%;
+}
 </style>
-    
   
-<h1>uTsAB(B) Technology</h1>
+<h1> uTsAB(B) </h1>  <h1> Technology</h1> 
 <p>This is a template 
-
 <br>
     This is a template 
     This is a template
+
     This is a template 
+
     This is a template 
+    This is a template
+    This is a template 
+
 
 </center>
 </p>
-<form action="/result">
-<table>
-  <tr>
-    <th>Examples</th>
-    <th>Input</th> 
-  </tr>
-  <tr>
-    <td>noun</td>
-    <td><input type="text" name="first_input"><br></td> 
-  </tr>
-</table>
-  <input type="submit" value="Submit">
-</form>
+<!--<form action="/result">-->
+<!--<table>-->
+<!--  <tr>-->
+<!--    <th>Examples</th>-->
+<!--    <th>Input</th> -->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Noun</td>-->
+<!--    <td><input type="text" name="first_input"><br></td> -->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Verb</td>-->
+<!--    <td><input type="text" name="second_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Adjective</td>-->
+<!--    <td><input type="text" name="third_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>More Nouns </td>-->
+<!--    <td><input type="text" name="third_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--</table>-->
+<!-- </form>-->
+
+
+     <form method=POST action="/uni">
+        {% for xyz in chosen_madlib %}
+          {{xyz["part_of_speech"]}} <input type="noun" name="part_of_speech" value=""> </input> <br>
+            
+        {% endfor %}
+         <input type="submit" value="Submit">
+        
+      method = POST action="/showmeme">
+      Line 1 of Meme:<br>
+      <input type="text" name="user-first-ln" value="First Line of Meme">
+      <br>
+      Line 2 of Meme:<br>
+      <input type="text" name="user-second-ln" value="Second Line of Meme">
+  </form>
      
 
 </body>
 
 <footer>
   <center>
-  <p>Powered by Grit </p>
+  <h4>Powered by Grit </h4>
   </center>
 </footer>
 

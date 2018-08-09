@@ -4,16 +4,20 @@
 <center><title> uTsAB(B) University</title>
 </head>
 <body>
-      <style>
+<style>
 body {
     background-color: grey;
 }
 h1 {
     color: yellow;
     margin-left: 40px;
-} 
+}
+h4 {
+    position:absolute;
+    bottom:0%;
+    right:45%;
+}
 </style>
-  
 <h1> uTsAB(B) </h1>  <h1> University</h1> 
 <p>This is a template 
     This is a template 
@@ -49,15 +53,16 @@ h1 {
 </table>
   <input type="submit" value="Submit">
 </form>
- mad_lib =   
-  [  
-   { "part_speech":"noun"}
-  ]
 
+   <form method=POST action="/uni">
+        {% for xyz in chosen_madlib%}
+                xyz[part_of_speech] <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
+        {% endfor %}
+     
 </body>
 <footer>
   <center>
-  <p>Powered by Grit </p>
+  <h4>Powered by Grit </h4>
   </center>
 </footer>
 
