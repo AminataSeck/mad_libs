@@ -24,42 +24,46 @@ h1 {
 
 </center>
 </p>
-<form action="/result">
-<table>
-  <tr>
-    <th>Examples</th>
-    <th>Input</th> 
-  </tr>
-  <tr>
-    <td>Noun</td>
-    <td><input type="text" name="first_input"><br></td> 
-  </tr>
-  <tr>
-    <td>Verb</td>
-    <td><input type="text" name="second_input"><br></td> </td>
-  </tr>
-  <tr>
-    <td>Adjective</td>
-    <td><input type="text" name="third_input"><br></td> </td>
-  </tr>
-  <tr>
-    <td>More Nouns </td>
-    <td><input type="text" name="third_input"><br></td> </td>
-  </tr>
-</table>
-  <input type="submit" value="Submit">
-</form>
+<!--<form action="/result">-->
+<!--<table>-->
+<!--  <tr>-->
+<!--    <th>Examples</th>-->
+<!--    <th>Input</th> -->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Noun</td>-->
+<!--    <td><input type="text" name="first_input"><br></td> -->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Verb</td>-->
+<!--    <td><input type="text" name="second_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>Adjective</td>-->
+<!--    <td><input type="text" name="third_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td>More Nouns </td>-->
+<!--    <td><input type="text" name="third_input"><br></td> </td>-->
+<!--  </tr>-->
+<!--</table>-->
+<!-- </form>-->
 
-   <form method=POST action="/uni">
-        {% for xyz in chosen_madlib%}
-            {% if (answer_dict['is_correct'])\ %}
-                <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
-            {% else %}
-                <input type="radio" name="selected-answer" value="wrong"> {{ answer_dict['text'] }} </input> <br>
-            {% endif %}
+
+     <form method=POST action="/uni">
+        {% for xyz in chosen_madlib %}
+          {{xyz["part_of_speech"]}} <input type="noun" name="part_of_speech" value=""> </input> <br>
+            
         {% endfor %}
-        <input type="submit">
-
+         <input type="submit" value="Submit">
+        
+      method = POST action="/showmeme">
+      Line 1 of Meme:<br>
+      <input type="text" name="user-first-ln" value="First Line of Meme">
+      <br>
+      Line 2 of Meme:<br>
+      <input type="text" name="user-second-ln" value="Second Line of Meme">
+  </form>
      
 
 </body>

@@ -52,14 +52,8 @@ h1 {
 
    <form method=POST action="/uni">
         {% for xyz in chosen_madlib%}
-            {% if (answer_dict['is_correct']) %}
-                <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
-            {% else %}
-                <input type="radio" name="selected-answer" value="wrong"> {{ answer_dict['text'] }} </input> <br>
-            {% endif %}
+                xyz[part_of_speech] <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
         {% endfor %}
-        <input type="submit">
-
      
 
 </body>

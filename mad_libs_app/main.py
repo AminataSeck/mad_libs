@@ -36,8 +36,27 @@ class UniPage(webapp2.RequestHandler):
         
 class TechPage(webapp2.RequestHandler):
     def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+                
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+            
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
         about_template = the_jinja_env.get_template('templates/Tech_page.html')
-        self.response.write(about_template.render())
+        self.response.write(about_template.render(the_variable_dict))
+        
         
 class SportsPage(webapp2.RequestHandler):
     def get(self):
@@ -64,6 +83,8 @@ class ResultPage(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         self.response.write(about_template.render())
+        
+        
 
         
     def post(self):
