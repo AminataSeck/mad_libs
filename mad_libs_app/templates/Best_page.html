@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family= Yeseva One' rel='stylesheet'>
-<center><title> uTsAB(B) Sports</title>
+<center><title> uTsAB(B) Best Friends</title>
 </head>
 <body>
           <style>
@@ -22,21 +20,27 @@ h4 {
     position:absolute;
     bottom:0%;
     right:45%;
-} 
+}
 </style>
 
-<h1>uTsAB(B) </h1> <h1>Sports</h1>
-  <form method=POST action="/sports">
+
+
+
+<h1> uTsAB(B) </h1> <h1>Best Friends</h1>
+
+    <form method=POST action="/best">
         {% for xyz in chosen_madlib %}
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
             
         {% endfor %}
          <input type="submit" value="Submit">
-  </form>
-    
+    </form>
      
 
 </body>
+
+
+
 <style>
 .footer {
     position: fixed;
@@ -44,19 +48,14 @@ h4 {
     bottom: 0;
     width: 100%;
     color: yellow;
-    font-size:30px;
     text-align: center;
 }
 </style>
 <br>
 <br>
 <br>
-<div class="footer">
-<fotter>
+<footer>
   <p>Powered by GRIT</p>
-        <fotter>
-</div>
-
+</footer>
 
 </html>
->>>>>>> 4639ab954c29bb4dee96188e653efd07fc2d8fd6

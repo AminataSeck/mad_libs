@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family= Yeseva One' rel='stylesheet'>
+<center><title> uTsAB(B) Technology </title>
+</head>
+<body>
+      <style>
+body {
+    background-color: grey;
+}
+body{
+    font-family: 'Yeseva One';font-size: 22px;
+}
+h1 {
+    color: yellow;
+    margin-left: 40px;
+}
+h4 {
+    position:absolute;
+    bottom:0%;
+    right:45%;
+}
+</style>
+  
+<h1> uTsAB(B) </h1>  <h1> Technology</h1> 
+
+
+
+    <form method=POST action="/tech">
+        {% for xyz in chosen_madlib %}
+
+          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br> <br>
+            
+        {% endfor %}
+         <input type="submit" value="Submit">
+    </form>
+     
+
+</body>
+
+<style>
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: yellow;
+    font-size:30px;
+    text-align: center;
+}
+</style>
+<br>
+<br>
+<br>
+<div class="footer">
+  <p>Powered by GRIT</p>
+</div>
+
+</html>
+>>>>>>> 4639ab954c29bb4dee96188e653efd07fc2d8fd6

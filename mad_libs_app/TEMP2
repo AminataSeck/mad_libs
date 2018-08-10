@@ -47,7 +47,6 @@ h4 {
         about cities <br> like {{noun9_key}} and all the {{noun10_key}}  that live in them. Can you
         believe that {{num_key}} people live in {{noun11_key}}? <br>And they love to eat {{noun12_key}}
         for breakfast, lunch, {{noun13_key}}? That's a lot of {{noun14_key}}!
-
     {%elif category_key == "sports": %}
         Last night at {{noun1_key}} Stadium, {{noun2_key}} played against {{noun3_key}}. It was the {{num1_key}}
         game of the Championship. All the players were {{adj1_key}}. The {{adj2_key}} coach screamed at the
