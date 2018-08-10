@@ -28,13 +28,13 @@ h4 {
 
 <h1> uTsAB(B) </h1> <h1>Best Friends</h1>
 
-<form method=POST action="/ani">
+    <form method=POST action="/best">
         {% for xyz in chosen_madlib %}
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
             
         {% endfor %}
          <input type="submit" value="Submit">
-</form>
+    </form>
      
 
 </body>
