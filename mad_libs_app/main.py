@@ -239,6 +239,7 @@ class SportsPage(webapp2.RequestHandler):
             },
             {
                  "part_of_speech": "adjective",
+            },
             
             {
                  "part_of_speech": "adjective",
