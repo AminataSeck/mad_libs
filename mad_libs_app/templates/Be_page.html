@@ -23,11 +23,16 @@ h4 {
 }
 </style>
 
+
+
+
+
 <h1> uTsAB(B) </h1> <h1>Best Friends</h1>
 
-<form method=POST action="/be">
+
+<form method=POST action="/ani">
         {% for xyz in chosen_madlib %}
-          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input>  <br> <br>
+          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
             
         {% endfor %}
          <input type="submit" value="Submit">
@@ -35,24 +40,15 @@ h4 {
      
 
 </body>
+
 <style>
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-}
-<style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
+    color: yellow;
+    font-size:30px;
     text-align: center;
 }
 </style>
@@ -63,6 +59,4 @@ h4 {
   <p>Powered by GRIT</p>
 </div>
 
-
-</html>
 </html>

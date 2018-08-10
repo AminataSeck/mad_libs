@@ -53,43 +53,8 @@ class UniPage(webapp2.RequestHandler):
         
         mad_lib_inputs =[
             {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "adverb",
-            },
-            {
-                 "part_of_speech": "verb",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "adjective",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "noun",
-            },
-            {
-                 "part_of_speech": "verb",
-            },
-            {
-                 "part_of_speech": "adjective",
-            },
-            {
-                 "part_of_speech": "adjective",
+                "part_of_speech": "noun",
+                
             },
             {
                  "part_of_speech": "verb",
@@ -521,8 +486,103 @@ class BePage(webapp2.RequestHandler):
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "category_key": "be"
+            "category_key": "bed"
             
+        } 
+        
+        self.response.write(about_template.render(the_variable_dict))
+    def get(self):
+        
+        mad_lib_inputs =[
+            {
+                "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "verb",
+            }
+        ]    
+
+        the_variable_dict = {
+            
+            "chosen_madlib": mad_lib_inputs
+            
+        }
+        
+        about_template = the_jinja_env.get_template('templates/Bed_page.html')
+        self.response.write(about_template.render(the_variable_dict))
+        
+class BePage(webapp2.RequestHandler):
+    def post(self):
+        about_template = the_jinja_env.get_template('templates/Result_page.html')
+        noun = self.request.get("noun")
+        verb = self.request.get("verb")
+        adjective = self.request.get("adj")
+        number = self.request.get("num")
+        adverb = self.request.get("adv")
+        the_variable_dict = {
+            
+            "noun_key": noun, 
+            "verb_key": verb,
+            "adj_key": adjective,
+            "num_key": number,
+            "category_key": "be"
         } 
         
         self.response.write(about_template.render(the_variable_dict))

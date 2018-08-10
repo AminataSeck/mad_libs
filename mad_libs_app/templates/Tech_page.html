@@ -28,17 +28,15 @@ h4 {
 
     <form method=POST action="/tech">
         {% for xyz in chosen_madlib %}
+
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br> <br>
           
           
             
-            
         {% endfor %}
          <input type="submit" value="Submit">
-         
-         
-        
     </form>
+     
 
 </body>
 
@@ -48,8 +46,8 @@ h4 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    color: yellow;
+    font-size:30px;
     text-align: center;
 }
 </style>
@@ -61,3 +59,4 @@ h4 {
 </div>
 
 </html>
+
