@@ -3,8 +3,8 @@
 <head>
 <center><title> uTsAB(B) University</title>
 </head>
-<body>
 <style>
+
 body {
     background-color: grey;
 }
@@ -17,7 +17,40 @@ h4 {
     bottom:0%;
     right:45%;
 }
+    
+h2 {
+    color: yellow;
+    margin-left: 40px;
+} 
+
+h3 {
+    position:absolute;
+    bottom:0%;
+    right:45%;
+}
+div {
+    background-color: grey
+;
+    width: auto;
+    border: 10px solid black;
+    padding: 25px;
+    margin: 25px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: Yellow;
+    font-size:30px;
+    text-align: center;
+
+
+}
 </style>
+<body>
+
+<div>
 <h1> uTsAB(B) </h1>  <h1> University</h1> 
 
     <form method=POST action="/tech">
@@ -25,35 +58,16 @@ h4 {
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input>  <br> <br>
             
         {% endfor %}
-<<<<<<< HEAD
          <input type="submit" value="Submit">
     </form>
-=======
-
-         <input type="submit" value="Submit">
-    </form>
-
->>>>>>> ec0905b03f43d1641f1c2755020c1d3b273361f5
-</body>
-<style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-}
-</style>
-<br>
-<br>
-<br>
-<div class="footer">
-  <p>Powered by GRIT</p>
 </div>
 
 
-</html>
+</body>
+
+<footer>
+  <p>Powered by GRIT</p>
+</footer>
 
 </html>
+
