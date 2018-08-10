@@ -205,6 +205,10 @@ class SportsPage(webapp2.RequestHandler):
             {
                  "part_of_speech": "adjective",
             },
+<<<<<<< HEAD
+            
+=======
+>>>>>>> f93dc25710d78dc7fd9e7005c1051668db363586
             {
                  "part_of_speech": "adjective",
             },
