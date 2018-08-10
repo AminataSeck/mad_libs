@@ -53,8 +53,43 @@ class UniPage(webapp2.RequestHandler):
         
         mad_lib_inputs =[
             {
-                "part_of_speech": "noun",
-                
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adverb",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "adjective",
             },
             {
                  "part_of_speech": "verb",
@@ -192,12 +227,73 @@ class SportsPage(webapp2.RequestHandler):
         mad_lib_inputs =[
             {
                 "part_of_speech": "noun",
-                
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "adjective",
+            
+            {
+                 "part_of_speech": "adjective",
             },
             {
                  "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "adverb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "number",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "verb",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "adjective",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
+            },
+            {
+                 "part_of_speech": "noun",
             }
-            
         ]    
 
         the_variable_dict = {
@@ -398,7 +494,6 @@ class BePage(webapp2.RequestHandler):
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
-            "adv_key":adverb,
             "category_key": "be"
             
         } 

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family= Yeseva One' rel='stylesheet'>
 <center><title> uTsAB(B) Sports</title>
 </head>
 <body>
           <style>
 body {
     background-color: grey;
+}
+body{
+    font-family: 'Yeseva One';font-size: 22px;
 }
 h1 {
     color: yellow;
@@ -19,8 +23,13 @@ h4 {
 } 
 </style>
   
+<<<<<<< HEAD
 <h1>uTsAB(B) Sports</h1>
   <form method=POST action="/tech">
+=======
+<h1>uTsAB(B) </h1> <h1>Sports</h1>
+  <form method=POST action="/sports">
+>>>>>>> cf766c6a0c6abfb87daad5f635685dd0725d557a
         {% for xyz in chosen_madlib %}
           {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input> <br>
             
