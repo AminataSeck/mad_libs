@@ -26,7 +26,7 @@ h4 {
 <h1>uTsAB(B) </h1> <h1>Sports</h1>
   <form method=POST action="/sports">
         {% for xyz in chosen_madlib %}
-          {{xyz["part_of_speech"]}} <input type="noun" name="{{xyz["part_of_speech"]}}" value=""> </input>  <br> <br>
+          {{xyz["part_of_speech"]}} <input type="noun","noun2" name="{{xyz["part_of_speech"]}}" value=""> </input>  <br> <br>
             
         {% endfor %}
          <input type="submit" value="Submit">

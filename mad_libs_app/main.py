@@ -206,6 +206,8 @@ class SportsPage(webapp2.RequestHandler):
     def post(self):
         about_template = the_jinja_env.get_template('templates/Result_page.html')
         noun = self.request.get("noun")
+        noun2 = self.request.get("noun2")
+        noun3 = self.request.get("noun3")
         verb = self.request.get("verb")
         adjective = self.request.get("adj")
         number = self.request.get("num")
@@ -213,6 +215,8 @@ class SportsPage(webapp2.RequestHandler):
         the_variable_dict = {
             
             "noun_key": noun, 
+            "noun_key2":noun2,
+            "noun_key3":noun3,
             "verb_key": verb,
             "adj_key": adjective,
             "num_key": number,
@@ -229,17 +233,17 @@ class SportsPage(webapp2.RequestHandler):
                 "part_of_speech": "noun",
             },
             {
-                 "part_of_speech": "noun",
+                 "part_of_speech": "noun2",
             },
             {
-                 "part_of_speech": "noun",
+                 "part_of_speech": "noun3",
             },
             {
                  "part_of_speech": "number",
             },
             {
                  "part_of_speech": "adjective",
-            
+            },
             {
                  "part_of_speech": "adjective",
             },
